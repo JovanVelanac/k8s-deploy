@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Assignment1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Assignment1
+  template:
+    metadata:
+      labels:
+        app: Assignment1
+    spec:
+      containers:
+      - name: Assignment1
+        image: jovanvelanac/assignment3:latest
+        ports:
+        - containerPort: 80
