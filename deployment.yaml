@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: assignment1
-        image: jovanvelanac/assignment3:latest
+        image: gethecked/go-dock
         ports:
-        - containerPort: 80
+        - containerPort: 8081
